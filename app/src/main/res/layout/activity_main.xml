@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,74 +14,6 @@
             android:layout_height="wrap_content"
             android:onClick="checkQuiz"
             android:text="Submit" />
-
-        <LinearLayout
-            android:id="@+id/question_2_container"
-            style="@style/question_container_style">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout style="@style/radio_group_linear_layout_style">
-
-                    <ImageView
-                        android:id="@+id/question_2_first_logo"
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/starbucks_logo_1" />
-
-                </LinearLayout>
-
-                <LinearLayout style="@style/radio_group_linear_layout_style">
-
-                    <ImageView
-                        android:id="@+id/question_2_second_logo"
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/starbucks_logo_2" />
-
-                </LinearLayout>
-
-                <LinearLayout style="@style/radio_group_linear_layout_style">
-
-                    <ImageView
-                        android:id="@+id/question_2_third_logo"
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/starbucks_logo_3" />
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <RadioGroup
-                android:id="@+id/question_2_radio_group"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/question_2_first_logo_radio"
-                    style="@style/question_radio_button_style"
-                    android:text="" />
-
-                <RadioButton
-                    android:id="@+id/question_2_second_logo_radio"
-                    style="@style/question_radio_button_style"
-                    android:text="" />
-
-                <RadioButton
-                    android:id="@+id/question_2_third_logo_radio"
-                    style="@style/question_radio_button_style"
-                    android:text="" />
-
-            </RadioGroup>
-
-            <TextView
-                style="@style/question_style"
-                android:text="@string/question_2" />
-
-        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/question_3_container"
@@ -100,11 +31,13 @@
                         style="@style/question_checkbox_style"
                         android:text="" />
 
-                    <ImageView
+                    <TextView
                         android:id="@+id/question_3_first_checkbox_logo"
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/netflix_logo" />
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -115,11 +48,13 @@
                         style="@style/question_checkbox_style"
                         android:text="" />
 
-                    <ImageView
+                    <TextView
                         android:id="@+id/question_3_second_checkbox_logo"
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/amazon_logo" />
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -130,11 +65,13 @@
                         style="@style/question_checkbox_style"
                         android:text="" />
 
-                    <ImageView
+                    <TextView
                         android:id="@+id/question_3_third_checkbox_logo"
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/bing_logo" />
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -161,13 +98,12 @@
                 android:id="@+id/question_4_logo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/nike_logo" />
+                android:src="@drawable/uber_logo" />
 
             <TextView
                 style="@style/question_style"
                 android:text="@string/question_4" />
         </LinearLayout>
-
 
         <LinearLayout
             android:id="@+id/question_5_container"
@@ -179,31 +115,36 @@
 
                 <LinearLayout style="@style/radio_group_linear_layout_style">
 
-                    <ImageView
+                    <TextView
                         android:id="@+id/question_5_first_radio_logo"
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/pepsi_logo" />
+                        android:layout_height="wrap_content"
+                        android:text=" Born with them"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
                 <LinearLayout style="@style/radio_group_linear_layout_style">
 
-                    <ImageView
+                    <TextView
                         android:id="@+id/question_5_second_radio_logo"
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/dominos_logo" />
+                        android:layout_height="wrap_content"
+                        android:text=" Military experiment gone awry"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
                 <LinearLayout style="@style/radio_group_linear_layout_style">
 
-                    <ImageView
+                    <TextView
                         android:id="@+id/question_5_third_radio_logo"
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/old_apple_logo" />
+                        android:layout_height="wrap_content"
+                        android:text="  Bitten by a radioactive spider"
+                        android:textStyle="bold"
+
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -251,7 +192,7 @@
                 android:id="@+id/question_6_logo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/detroit_lions_logo" />
+                android:src="@drawable/al_ahly_logo" />
 
             <TextView
                 style="@style/question_style"
@@ -272,15 +213,16 @@
                 android:id="@+id/question_7_logo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/udacity_logo" />
+                android:src="@drawable/dell_logo" />
 
             <TextView
                 style="@style/question_style"
                 android:text="@string/question_7" />
         </LinearLayout>
 
+
         <LinearLayout
-            android:id="@+id/question_1_container"
+            android:id="@+id/question_2_container"
             style="@style/question_container_style">
 
             <LinearLayout
@@ -289,60 +231,68 @@
 
                 <LinearLayout style="@style/radio_group_linear_layout_style">
 
-                    <ImageView
-                        android:id="@+id/question_1_first_logo"
+                    <TextView
+                        android:id="@+id/question_2_first_logo"
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/blackberry_logo" />
+                        android:layout_height="wrap_content"
+                        android:text="17 Year"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
                 <LinearLayout style="@style/radio_group_linear_layout_style">
 
-                    <ImageView
-                        android:id="@+id/question_1_second_logo"
+                    <TextView
+                        android:id="@+id/question_2_second_logo"
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/toyota_logo" />
+                        android:layout_height="wrap_content"
+                        android:text="86 Year"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
                 <LinearLayout style="@style/radio_group_linear_layout_style">
 
-                    <ImageView
-                        android:id="@+id/question_1_third_logo"
+                    <TextView
+                        android:id="@+id/question_2_third_logo"
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:src="@drawable/lulu_logo" />
+                        android:layout_height="wrap_content"
+                        android:text="49 Year"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>
 
             <RadioGroup
-                android:id="@+id/question_1_radio_group"
+                android:id="@+id/question_2_radio_group"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/question_1_first_logo_radio"
+                    android:id="@+id/question_2_first_logo_radio"
                     style="@style/question_radio_button_style"
                     android:text="" />
 
                 <RadioButton
-                    android:id="@+id/question_1_second_logo_radio"
+                    android:id="@+id/question_2_second_logo_radio"
                     style="@style/question_radio_button_style"
                     android:text="" />
 
                 <RadioButton
-                    android:id="@+id/question_1_third_logo_radio"
+                    android:id="@+id/question_2_third_logo_radio"
                     style="@style/question_radio_button_style"
                     android:text="" />
+
             </RadioGroup>
 
             <TextView
                 style="@style/question_style"
                 android:text="@string/question_1" />
+
         </LinearLayout>
+
+
     </LinearLayout>
+
 </ScrollView>
